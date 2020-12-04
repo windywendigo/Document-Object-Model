@@ -1,0 +1,109 @@
+/* GENERAL */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: -webkit-linear-gradient(bottom left, rgb(156, 210, 255), rgb(255, 219, 198), rgb(255, 192, 213));
+    min-height: 100vh;
+
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+:root {
+    --color-text: rgb(97, 44, 44);
+}
+
+
+
+/* HEADER */
+main {
+    margin-top: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--color-text);
+    font-weight: lighter;
+    font-size: 5em;
+}
+
+
+
+/* MAIN */
+.input_text {
+    padding: 10px;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    color: var(--color-text);
+    opacity: 0.8;
+    font-size: 1.3em;
+    background-color: transparent;
+    border: var(--color-text) 2px solid;
+    border-radius: 50px;
+    outline: none;
+}
+
+.input_text:focus {
+    opacity: 1;
+}
+
+.button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    opacity: 0.8;
+    font-size: 1.3em;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+
+    transition: ease 0.5s opacity;
+}
+
+.button_add {
+    color: rgb(255, 219, 198);
+    background-color: var(--color-text);
+    border: var(--color-text) solid 2px;
+}
+
+.button_erase {
+    color: var(--color-text);
+    background-color: transparent;
+    border: var(--color-text) solid 2px;
+
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+.list_items {
+    margin-top: 5px;
+    margin-left: 100px;¡
+    color: var(--color-text);
+    text-align: left;
+    font-size: 1.3em;
+    list-style: none;
+    cursor: pointer;
+}
+
+.line_through {
+    text-decoration: line-through;
+}
+
+.fas {
+    margin-right: 30px;
+    opacity: 0.7;
+    transition: 0.5s ease opacity;
+}
+
+.fas:hover {
+    opacity: 1;
+}
